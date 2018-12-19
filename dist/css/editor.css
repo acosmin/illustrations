@@ -1,0 +1,178 @@
+.illustrations-svg-select {
+  margin-bottom: 1em; }
+  .illustrations-svg-select .illustrations-svg-preview {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1em;
+    border: 1px solid #e1e1e1; }
+    .illustrations-svg-select .illustrations-svg-preview svg {
+      max-width: 100% !important;
+      height: auto !important; }
+
+.components-range-control .dashicon.illustrations-size-icon {
+  margin-right: .4em;
+  margin-bottom: -.4em; }
+  .components-range-control .dashicon.illustrations-size-icon.active {
+    color: #4bb867; }
+
+@media (min-width: 320px) {
+  .illustrations-select-modal {
+    width: 100%;
+    height: 100%; }
+    .illustrations-select-modal .illustrations-select-wrap {
+      min-width: 100%;
+      width: 100%;
+      min-height: 100%;
+      height: 100%; }
+      .illustrations-select-modal .illustrations-select-wrap .item-preview {
+        height: 350px; }
+      .illustrations-select-modal .illustrations-select-wrap .col-xs-4 {
+        flex-basis: 100%;
+        max-width: 100%; } }
+
+@media (min-width: 600px) {
+  .illustrations-select-modal {
+    width: 100%;
+    height: 100%; }
+    .illustrations-select-modal .illustrations-select-wrap {
+      min-width: 100%;
+      width: 100%;
+      min-height: 100%;
+      height: 100%; }
+      .illustrations-select-modal .illustrations-select-wrap .item-preview {
+        height: 300px; }
+      .illustrations-select-modal .illustrations-select-wrap .col-xs-4 {
+        flex-basis: 50%;
+        max-width: 50%; } }
+
+@media (min-width: 960px) {
+  .illustrations-select-modal {
+    width: 100%;
+    max-width: 960px;
+    height: auto; }
+    .illustrations-select-modal .illustrations-select-wrap {
+      min-width: 900px;
+      width: 100%;
+      min-height: 400px;
+      height: 100%; }
+      .illustrations-select-modal .illustrations-select-wrap .item-preview {
+        height: 250px; }
+      .illustrations-select-modal .illustrations-select-wrap .col-xs-4 {
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%; } }
+
+.illustrations-select-modal .components-panel__header.edit-post-sidebar__panel-tabs {
+  margin: -16px -16px 2rem;
+  padding: 0 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 56px;
+  z-index: 10; }
+
+.illustrations-select-modal .illustrations-select-search-field {
+  display: flex;
+  align-items: center; }
+  .illustrations-select-modal .illustrations-select-search-field .search-input {
+    display: flex;
+    padding: 0 1em; }
+    .illustrations-select-modal .illustrations-select-search-field .search-input input {
+      width: 200px; }
+
+.illustrations-select-modal .illustrations-select-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .illustrations-select-modal .illustrations-select-wrap h1 {
+    text-align: center;
+    line-height: 1.8; }
+  .illustrations-select-modal .illustrations-select-wrap.browse-selected .illustration-notice {
+    width: 100%;
+    text-align: center;
+    padding: 10em 0; }
+  .illustrations-select-modal .illustrations-select-wrap.search-selected .illustration-notice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .illustrations-select-modal .illustrations-select-wrap .row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem; }
+    .illustrations-select-modal .illustrations-select-wrap .row .illustration-notice {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item {
+      box-sizing: border-box; }
+      .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item .item-preview {
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 6px;
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        transition: box-shadow .2s ease-in-out; }
+      .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item:hover .item-preview {
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
+      .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item .item-loading {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        background-color: #f1f1f1;
+        border: 1px solid #e1e1e1;
+        border-radius: 6px; }
+        .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item .item-loading .components-spinner {
+          margin: 0 auto; }
+      .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item .item-details {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0; }
+        .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item .item-details h4 {
+          margin: 0; }
+        .illustrations-select-modal .illustrations-select-wrap .row .illustrations-select-item .item-details .is-button {
+          margin-left: auto; }
+    .illustrations-select-modal .illustrations-select-wrap .row .col-xs-4 {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+      width: 100%; }
+
+.wp-block-illustrations-block-illustration .illustration-svg-container {
+  width: 100%;
+  display: inline-block; }
+
+.wp-block-illustrations-block-illustration .illustration-svg-wrap {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0; }
+  .wp-block-illustrations-block-illustration .illustration-svg-wrap svg {
+    width: auto !important;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+
+/*# sourceMappingURL=editor.css.map*/

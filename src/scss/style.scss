@@ -1,0 +1,35 @@
+.wp-block-illustrations-block-illustration {
+    display: inline-block;   
+    width: 100%;
+    
+    &.alignleft,
+    &.alignright {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .illustration-svg-container {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .illustration-svg-wrap {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        vertical-align: middle; 
+        overflow: hidden;
+        margin: 0;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        svg {
+            width: auto !important;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
