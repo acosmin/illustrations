@@ -8595,7 +8595,15 @@ function (_Component) {
     key: "svgMarkup",
     value: function svgMarkup() {
       var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      return Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToStaticMarkup"])(this.illustration(props));
+      var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToStaticMarkup"])(this.illustration(props));
+      /** 
+       * Make sure the svg doesn't have padding-bottom
+       * 
+       * @since 1.0.1 
+       */
+
+      markup = markup.replace('<svg ', '<svg style="position:absolute" ');
+      return markup;
     }
     /**
      * Saves the svg markup and `selected` attribute if an illustration is
@@ -8644,7 +8652,8 @@ function (_Component) {
         className: "illustration-svg-container"
       }, React.createElement("figure", {
         style: {
-          paddingBottom: paddingBottom
+          paddingBottom: paddingBottom,
+          position: 'relative'
         },
         className: "illustration-svg-wrap"
       }, status !== 'pending' || status === 'done' && status !== 'error' ? this.illustration({
@@ -8667,9 +8676,37 @@ var methods = {
   })])(IllustrationsBlock),
   save: function save(props) {
     var _props$attributes = props.attributes,
-        svg = _props$attributes.svg,
         itemid = _props$attributes.itemid,
         paddingBottom = _props$attributes.paddingBottom;
+    /** 
+     * Make sure the svg doesn't have padding-bottom
+     * 
+     * @since 1.0.1 
+     */
+
+    var svg = props.attributes.svg.replace('<svg ', '<svg style="position:absolute" ');
+    return React.createElement("div", _defineProperty({}, idAttr, itemid), React.createElement("div", {
+      className: "illustration-svg-container"
+    }, React.createElement("figure", {
+      style: {
+        paddingBottom: paddingBottom,
+        position: 'relative'
+      },
+      className: "illustration-svg-wrap"
+    }, React.createElement(RawHTML, null, svg))));
+  }
+}; ///////////////////////////////////////////////////////////////////
+// Deprecated
+
+var deprecated = [// 1.0.0
+{
+  supports: _objectSpread({}, manifest.supports),
+  attributes: attributes,
+  save: function save(props) {
+    var _props$attributes2 = props.attributes,
+        svg = _props$attributes2.svg,
+        itemid = _props$attributes2.itemid,
+        paddingBottom = _props$attributes2.paddingBottom;
     return React.createElement("div", _defineProperty({}, idAttr, itemid), React.createElement("div", {
       className: "illustration-svg-container"
     }, React.createElement("figure", {
@@ -8679,12 +8716,13 @@ var methods = {
       className: "illustration-svg-wrap"
     }, React.createElement(RawHTML, null, svg))));
   }
-}; ///////////////////////////////////////////////////////////////////
-// Register the block
+}]; // Register the block
 
 registerBlockType(name, _objectSpread({}, manifest, {
   attributes: attributes
-}, methods));
+}, methods, {
+  deprecated: deprecated
+}));
 
 /***/ }),
 
