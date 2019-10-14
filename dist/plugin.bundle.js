@@ -15416,7 +15416,7 @@ module.exports = webpackAsyncContext;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Cosmin\xampp\htdocs\wordpress\wp-content\plugins\illustrations\index.js */"./index.js");
+module.exports = __webpack_require__(/*! E:\Cosmin\xampp\htdocs\wp\wp-content\plugins\illustrations\index.js */"./index.js");
 
 
 /***/ })
