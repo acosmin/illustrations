@@ -8275,7 +8275,7 @@ var addIllustrationAttr = function addIllustrationAttr(settings) {
 
 var addIllustrationID = function addIllustrationID(extraProps, blockType, attributes) {
   if (blockType.name === name) {
-    var blocks = wp.data.select('core/editor').getBlocks();
+    var blocks = wp.data.select('core/block-editor').getBlocks();
 
     if (blocks.length && extraProps[idAttr] !== '') {
       var illstBlocks = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["getAllBlocksByName"])(blocks, name);
@@ -8698,7 +8698,7 @@ registerBlockType(name, _objectSpread({}, manifest, {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // Editor
-var PanelColorSettings = wp.editor.PanelColorSettings; // Internationalization
+var PanelColorSettings = wp.blockEditor.PanelColorSettings; // Internationalization
 
 var __ = wp.i18n.__;
 /* harmony default export */ __webpack_exports__["default"] = (function (parent) {
@@ -8754,7 +8754,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
  // Editor
 
-var InspectorControls = wp.editor.InspectorControls;
+var InspectorControls = wp.blockEditor.InspectorControls;
 /* harmony default export */ __webpack_exports__["default"] = (function (parent) {
   var illustrationSave = parent.illustrationSave,
       props = parent.props;
