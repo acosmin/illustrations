@@ -9307,6 +9307,7 @@ function SelectIllustration(props) {
     });
   };
 
+  var svgString = svg.replace('svg style="position:absolute"', 'svg');
   return React.createElement(PanelBody, {
     title: __('Illustration'),
     initialOpen: false
@@ -9316,7 +9317,7 @@ function SelectIllustration(props) {
     "aria-label": __('Edit or update the image')
   }, React.createElement(RawHTML, {
     className: "illustrations-svg-preview"
-  }, svg)), React.createElement(PanelRow, null, React.createElement(Button, {
+  }, svgString)), React.createElement(PanelRow, null, React.createElement(Button, {
     isLink: true,
     onClick: openModal
   }, __('Select Illustration', 'illustrations'))), selecting && React.createElement(Modal, {
