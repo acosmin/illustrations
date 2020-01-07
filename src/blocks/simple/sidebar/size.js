@@ -35,7 +35,7 @@ export default ( parent ) => {
     }
 
     return (
-        <PanelBody title={ __( 'Size' ) } initialOpen={ false }>
+        <PanelBody title={ __( 'Size', 'illustrations' ) } initialOpen={ false }>
             { Object.keys( breakPoints ).map( bp => {
                 let icon = bp === 'mobile' ? 'smartphone' : bp;
                 const active = currentlyActive( bp );
