@@ -8275,7 +8275,7 @@ var addIllustrationAttr = function addIllustrationAttr(settings) {
 
 var addIllustrationID = function addIllustrationID(extraProps, blockType, attributes) {
   if (blockType.name === name) {
-    var blocks = wp.data.select('core/editor').getBlocks();
+    var blocks = wp.data.select('core/block-editor').getBlocks();
 
     if (blocks.length && extraProps[idAttr] !== '') {
       var illstBlocks = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["getAllBlocksByName"])(blocks, name);
@@ -8595,7 +8595,15 @@ function (_Component) {
     key: "svgMarkup",
     value: function svgMarkup() {
       var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      return Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToStaticMarkup"])(this.illustration(props));
+      var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToStaticMarkup"])(this.illustration(props));
+      /** 
+       * Make sure the svg doesn't have padding-bottom
+       * 
+       * @since 1.0.1 
+       */
+
+      markup = markup.replace('<svg ', '<svg style="position:absolute" ');
+      return markup;
     }
     /**
      * Saves the svg markup and `selected` attribute if an illustration is
@@ -8644,7 +8652,8 @@ function (_Component) {
         className: "illustration-svg-container"
       }, React.createElement("figure", {
         style: {
-          paddingBottom: paddingBottom
+          paddingBottom: paddingBottom,
+          position: 'relative'
         },
         className: "illustration-svg-wrap"
       }, status !== 'pending' || status === 'done' && status !== 'error' ? this.illustration({
@@ -8667,9 +8676,37 @@ var methods = {
   })])(IllustrationsBlock),
   save: function save(props) {
     var _props$attributes = props.attributes,
-        svg = _props$attributes.svg,
         itemid = _props$attributes.itemid,
         paddingBottom = _props$attributes.paddingBottom;
+    /** 
+     * Make sure the svg doesn't have padding-bottom
+     * 
+     * @since 1.0.1 
+     */
+
+    var svg = props.attributes.svg.replace('<svg ', '<svg style="position:absolute" ');
+    return React.createElement("div", _defineProperty({}, idAttr, itemid), React.createElement("div", {
+      className: "illustration-svg-container"
+    }, React.createElement("figure", {
+      style: {
+        paddingBottom: paddingBottom,
+        position: 'relative'
+      },
+      className: "illustration-svg-wrap"
+    }, React.createElement(RawHTML, null, svg))));
+  }
+}; ///////////////////////////////////////////////////////////////////
+// Deprecated
+
+var deprecated = [// 1.0.0
+{
+  supports: _objectSpread({}, manifest.supports),
+  attributes: attributes,
+  save: function save(props) {
+    var _props$attributes2 = props.attributes,
+        svg = _props$attributes2.svg,
+        itemid = _props$attributes2.itemid,
+        paddingBottom = _props$attributes2.paddingBottom;
     return React.createElement("div", _defineProperty({}, idAttr, itemid), React.createElement("div", {
       className: "illustration-svg-container"
     }, React.createElement("figure", {
@@ -8679,12 +8716,13 @@ var methods = {
       className: "illustration-svg-wrap"
     }, React.createElement(RawHTML, null, svg))));
   }
-}; ///////////////////////////////////////////////////////////////////
-// Register the block
+}]; // Register the block
 
 registerBlockType(name, _objectSpread({}, manifest, {
   attributes: attributes
-}, methods));
+}, methods, {
+  deprecated: deprecated
+}));
 
 /***/ }),
 
@@ -8698,7 +8736,7 @@ registerBlockType(name, _objectSpread({}, manifest, {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // Editor
-var PanelColorSettings = wp.editor.PanelColorSettings; // Internationalization
+var PanelColorSettings = wp.blockEditor.PanelColorSettings; // Internationalization
 
 var __ = wp.i18n.__;
 /* harmony default export */ __webpack_exports__["default"] = (function (parent) {
@@ -8754,7 +8792,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
  // Editor
 
-var InspectorControls = wp.editor.InspectorControls;
+var InspectorControls = wp.blockEditor.InspectorControls;
 /* harmony default export */ __webpack_exports__["default"] = (function (parent) {
   var illustrationSave = parent.illustrationSave,
       props = parent.props;
@@ -9269,6 +9307,7 @@ function SelectIllustration(props) {
     });
   };
 
+  var svgString = svg.replace('svg style="position:absolute"', 'svg');
   return React.createElement(PanelBody, {
     title: __('Illustration'),
     initialOpen: false
@@ -9278,7 +9317,7 @@ function SelectIllustration(props) {
     "aria-label": __('Edit or update the image')
   }, React.createElement(RawHTML, {
     className: "illustrations-svg-preview"
-  }, svg)), React.createElement(PanelRow, null, React.createElement(Button, {
+  }, svgString)), React.createElement(PanelRow, null, React.createElement(Button, {
     isLink: true,
     onClick: openModal
   }, __('Select Illustration', 'illustrations'))), selecting && React.createElement(Modal, {
@@ -15416,7 +15455,7 @@ module.exports = webpackAsyncContext;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Cosmin\xampp\htdocs\wordpress\wp-content\plugins\illustrations\index.js */"./index.js");
+module.exports = __webpack_require__(/*! E:\Cosmin\xampp\htdocs\wp\wp-content\plugins\illustrations\index.js */"./index.js");
 
 
 /***/ })
