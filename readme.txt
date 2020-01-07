@@ -50,6 +50,8 @@ Release Date: October 14th, 2019
 * Updated plugin tags;
 * Fixed modal style for sticky header;
 * Fixed svg bottom padding when the plugin is disabled, you might need to save the posts again;
+* Fixed missing textdomains;
+* Fixed missing `$css` variable define for filter;
 
 = 1.0.0 =
 Release Date: December 17th, 2018
