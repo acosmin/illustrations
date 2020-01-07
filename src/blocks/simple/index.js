@@ -212,7 +212,7 @@ class IllustrationsBlock extends Component {
         this.props.setState( { status: 'error' }, () =>
             console.error( error )
         );
-    }
+	}
 
     /**
      * Converts SVG component to string.
@@ -236,7 +236,11 @@ class IllustrationsBlock extends Component {
 		 * 
 		 * @since 1.0.1 
 		 */
-		markup = markup.replace( '<svg ', '<svg style="position:absolute" ');
+		const posAbs = '<svg style="position:absolute" ';
+
+		if ( ! markup.includes( posAbs ) ) {
+			markup = markup.replace( '<svg ', posAbs );
+		}
 
         return markup;
     }
@@ -317,7 +321,14 @@ const methods = {
 		 * 
 		 * @since 1.0.1 
 		 */
-		const svg = props.attributes.svg.replace( '<svg ', '<svg style="position:absolute" ');
+		let svg = '';
+		const posAbs = '<svg style="position:absolute" ';
+
+		if ( ! props.attributes.svg.includes( posAbs ) ) {
+			svg = props.attributes.svg.replace( '<svg ', posAbs );
+		} else {
+			svg = props.attributes.svg;
+		}
 		
         return (
             <div { ...{ [ idAttr ]: itemid } }>
