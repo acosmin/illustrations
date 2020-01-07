@@ -37,9 +37,7 @@ function SelectIllustration( props ) {
 
     const elProps = { ...props, defaults: { ...DEFAULTS } };
 
-	const openModal = e => setState( { selecting: true } );
-	
-	const svgString = svg.replace( 'svg style="position:absolute"', 'svg' );
+    const openModal = e => setState( { selecting: true } );
 
     return (
         <PanelBody title={ __( 'Illustration' ) } initialOpen={ false }>
@@ -47,7 +45,7 @@ function SelectIllustration( props ) {
                 className='editor-post-featured-image__preview illustrations-svg-select' 
                 onClick={ openModal } 
                 aria-label={ __( 'Edit or update the image' ) }>
-                    <RawHTML className='illustrations-svg-preview'>{ svgString }</RawHTML>
+                    <RawHTML className='illustrations-svg-preview'>{ svg }</RawHTML>
             </Button>
             
             <PanelRow>

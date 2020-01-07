@@ -2,11 +2,11 @@
 Contributors: acosmin 
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
-Requires at least: 5.2.0
-Tested up to: 5.3.3
-Stable tag: 1.0.1
+Requires at least: 5.0.0
+Tested up to: 5.1.0
+Stable tag: 1.0.0
 Requires PHP: 5.5
-Tags: illustrations, blocks, editor, svg, images
+Tags: gutenberg, blocks, gutenberg blocks, editor, illustartions, svg, wordpress 5.0, images
 
 == Description ==
 Illustrations Block enables you to add awesome SVG illustrations which you can customize directly from the new Editor (Gutenberg). You can change colors, alignment, sizes for different viewports.
@@ -41,15 +41,6 @@ License: MIT
 1. Preview
 
 == Changelog ==
-
-= 1.0.1 =
-Release Date: October 14th, 2019
-
-* Increased required wp version to 5.2.0;
-* Updated dependencies;
-* Updated plugin tags;
-* Fixed modal style for sticky header;
-* Fixed svg bottom padding when the plugin is disabled, you might need to save the posts again;
 
 = 1.0.0 =
 Release Date: December 17th, 2018
