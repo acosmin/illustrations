@@ -89,6 +89,8 @@ const attributes = {
     }
 };
 
+
+
 /**
  * Illustrations Block class
  *
@@ -225,9 +227,18 @@ class IllustrationsBlock extends Component {
      * @return {String}       Static marup compiled by `renderToStaticMarkup`
      */
     svgMarkup( props = {} ) {
-        return renderToStaticMarkup( 
+		let markup = renderToStaticMarkup( 
             this.illustration( props )
-        );
+		);
+		
+		/** 
+		 * Make sure the svg doesn't have padding-bottom
+		 * 
+		 * @since 1.0.1 
+		 */
+		markup = markup.replace( '<svg ', '<svg style="position:absolute" ');
+
+        return markup;
     }
 
     /**
@@ -268,7 +279,7 @@ class IllustrationsBlock extends Component {
                 
                 <div className={ className }>
                     <div className="illustration-svg-container">
-                        <figure style={ { paddingBottom } } className="illustration-svg-wrap">
+                        <figure style={ { paddingBottom, position: 'relative' } } className="illustration-svg-wrap">
                             { status !== 'pending' || ( status === 'done' && status !== 'error' ) ?  
                                 this.illustration( { primaryColor } ) : <Spinner /> 
                             }
@@ -299,12 +310,19 @@ const methods = {
             } )
         ] )( IllustrationsBlock ),
     save( props ) {
-        const { svg, itemid, paddingBottom } = props.attributes;
-        
+		const { itemid, paddingBottom } = props.attributes;
+
+		/** 
+		 * Make sure the svg doesn't have padding-bottom
+		 * 
+		 * @since 1.0.1 
+		 */
+		const svg = props.attributes.svg.replace( '<svg ', '<svg style="position:absolute" ');
+		
         return (
             <div { ...{ [ idAttr ]: itemid } }>
                 <div className="illustration-svg-container">
-                    <figure style={ { paddingBottom } } className="illustration-svg-wrap">
+                    <figure style={ { paddingBottom, position: 'relative' } } className="illustration-svg-wrap">
                         <RawHTML>{ svg }</RawHTML>
                     </figure>
                 </div>
@@ -315,5 +333,27 @@ const methods = {
 
 ///////////////////////////////////////////////////////////////////
 
+// Deprecated
+const deprecated = [
+	// 1.0.0
+	{
+		supports: { ...manifest.supports },
+		attributes,
+		save( props ) {
+			const { svg, itemid, paddingBottom } = props.attributes;
+			
+			return (
+				<div { ...{ [ idAttr ]: itemid } }>
+					<div className="illustration-svg-container">
+						<figure style={ { paddingBottom } } className="illustration-svg-wrap">
+							<RawHTML>{ svg }</RawHTML>
+						</figure>
+					</div>
+				</div>
+			);
+		},
+	}
+];
+
 // Register the block
-registerBlockType( name, { ...manifest, attributes, ...methods } );
+registerBlockType( name, { ...manifest, attributes, ...methods, deprecated } );

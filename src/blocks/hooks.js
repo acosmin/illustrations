@@ -51,7 +51,7 @@ const addIllustrationAttr = settings => {
  */
 const addIllustrationID = ( extraProps, blockType, attributes ) => {
     if( blockType.name === name ) {
-        const blocks = wp.data.select( 'core/editor' ).getBlocks();
+        const blocks = wp.data.select( 'core/block-editor' ).getBlocks();
 
         if( blocks.length && extraProps[ idAttr ] !== '' ) {
             const illstBlocks = getAllBlocksByName( blocks, name );
