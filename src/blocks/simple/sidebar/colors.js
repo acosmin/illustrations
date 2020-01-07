@@ -1,5 +1,5 @@
 // Editor
-const { PanelColorSettings } = wp.blockEditor;
+const { PanelColorSettings } = wp.editor;
 
 // Internationalization
 const { __ } = wp.i18n;

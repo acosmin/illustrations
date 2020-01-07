@@ -7,7 +7,7 @@ import IllustrationColors from './colors';
 import IllustrationSize from './size';
 
 // Editor
-const { InspectorControls } = wp.blockEditor;
+const { InspectorControls } = wp.editor;
 
 
 export default ( parent ) => {
