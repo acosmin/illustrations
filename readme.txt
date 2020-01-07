@@ -3,7 +3,7 @@ Contributors: acosmin
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 Requires at least: 5.2.0
-Tested up to: 5.3.0
+Tested up to: 5.3.3
 Stable tag: 1.0.1
 Requires PHP: 5.5
 Tags: illustrations, blocks, editor, svg, images
@@ -49,6 +49,7 @@ Release Date: October 14th, 2019
 * Updated dependencies;
 * Updated plugin tags;
 * Fixed modal style for sticky header;
+* Fixed svg bottom padding when the plugin is disabled, you might need to save the posts again;
 
 = 1.0.0 =
 Release Date: December 17th, 2018
