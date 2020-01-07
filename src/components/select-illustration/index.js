@@ -42,11 +42,11 @@ function SelectIllustration( props ) {
 	const svgString = svg.replace( 'svg style="position:absolute"', 'svg' );
 
     return (
-        <PanelBody title={ __( 'Illustration' ) } initialOpen={ false }>
+        <PanelBody title={ __( 'Illustration', 'illustrations' ) } initialOpen={ false }>
             <Button 
                 className='editor-post-featured-image__preview illustrations-svg-select' 
                 onClick={ openModal } 
-                aria-label={ __( 'Edit or update the image' ) }>
+                aria-label={ __( 'Edit or update the image', 'illustrations' ) }>
                     <RawHTML className='illustrations-svg-preview'>{ svgString }</RawHTML>
             </Button>
             

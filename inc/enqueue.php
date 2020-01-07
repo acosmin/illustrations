@@ -95,8 +95,7 @@ function ills_enqueue_frontend_assets() {
         // Go through them and add necessary inline styles
         foreach( $blocks as $index => $details ) {
             $css = ills_inline_css( $details[ 'id' ], $details[ 'attrs' ] );
-
-            apply_filters( 'illustrations_inline_styles', $css, $post->ID, $details );
+            $css = apply_filters( 'illustrations_inline_styles', $css, $post->ID, $details );
 
             wp_add_inline_style( 'ills-plugin-styles', $css );
         };
