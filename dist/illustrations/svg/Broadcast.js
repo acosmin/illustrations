@@ -1,1 +1,141 @@
-(window.illustrationsJSONP=window.illustrationsJSONP||[]).push([[41],{44:function(a,t,e){"use strict";e.r(t);var r=e(1),l=e.n(r),n=e(372),o=e.n(n),s=function(a){return l.a.createElement("svg",{preserveAspectRatio:"xMinYMin meet",className:a.class,id:"e9df7128-f90d-48f2-af2a-c80f8452c1a7",xmlns:"http://www.w3.org/2000/svg",xmlnsXlink:"http://www.w3.org/1999/xlink",viewBox:"0 0 882.5 686.51"},l.a.createElement("defs",null,l.a.createElement("linearGradient",{id:"c07350d9-0c50-4d35-b63a-3c71f5ac29f1",x1:"304.32",y1:"452.8",x2:"304.32",y2:"148.23",gradientUnits:"userSpaceOnUse"},l.a.createElement("stop",{offset:"0",stopColor:"gray",stopOpacity:"0.25"}),l.a.createElement("stop",{offset:"0.54",stopColor:"gray",stopOpacity:"0.12"}),l.a.createElement("stop",{offset:"1",stopColor:"gray",stopOpacity:"0.1"}))),l.a.createElement("path",{d:"M847.51,148.64a84.83,84.83,0,0,1,31.57,57.89,6.66,6.66,0,0,0,6.82,6l10.24-.3a6.68,6.68,0,0,0,6.46-7.31,108.65,108.65,0,0,0-113.2-98.3,6.69,6.69,0,0,0-6.34,7.42l1.14,10.18a6.65,6.65,0,0,0,6.85,5.92A84.79,84.79,0,0,1,847.51,148.64Z",transform:"translate(-297.37 -69.26)",fill:a.primaryColor}),l.a.createElement("path",{d:"M839.34,158.88a84.78,84.78,0,0,0-55.4-18.56,6.67,6.67,0,0,0-6.42,7.42l.85,7.59a6.66,6.66,0,0,0,6.74,5.92,64.15,64.15,0,0,1,64.79,56.22,6.68,6.68,0,0,0,6.81,5.89l7.63-.22a6.66,6.66,0,0,0,6.45-7.37A84.82,84.82,0,0,0,839.34,158.88Z",transform:"translate(-297.37 -69.26)",fill:a.primaryColor}),l.a.createElement("path",{d:"M807.48,198.8a47,47,0,0,1,17.15,29.52,6.73,6.73,0,0,0,6.81,5.77l3.69-.11a6.69,6.69,0,0,0,6.41-7.69,64.15,64.15,0,0,0-63.32-54.82,6.64,6.64,0,0,0-6.52,7.42l.41,3.68a6.73,6.73,0,0,0,6.67,5.93A46.94,46.94,0,0,1,807.48,198.8Z",transform:"translate(-297.37 -69.26)",fill:a.primaryColor}),l.a.createElement("path",{d:"M352.49,148.64a84.83,84.83,0,0,0-31.57,57.89,6.66,6.66,0,0,1-6.82,6l-10.24-.3a6.68,6.68,0,0,1-6.46-7.31,108.65,108.65,0,0,1,113.2-98.3,6.69,6.69,0,0,1,6.34,7.42L415.8,124.2a6.65,6.65,0,0,1-6.85,5.92A84.79,84.79,0,0,0,352.49,148.64Z",transform:"translate(-297.37 -69.26)",fill:a.primaryColor}),l.a.createElement("path",{d:"M360.66,158.88a84.78,84.78,0,0,1,55.4-18.56,6.67,6.67,0,0,1,6.42,7.42l-.85,7.59a6.66,6.66,0,0,1-6.74,5.92,64.15,64.15,0,0,0-64.79,56.22,6.68,6.68,0,0,1-6.81,5.89l-7.63-.22a6.66,6.66,0,0,1-6.45-7.37A84.82,84.82,0,0,1,360.66,158.88Z",transform:"translate(-297.37 -69.26)",fill:a.primaryColor}),l.a.createElement("path",{d:"M392.52,198.8a47,47,0,0,0-17.15,29.52,6.73,6.73,0,0,1-6.81,5.77l-3.69-.11a6.69,6.69,0,0,1-6.41-7.69,64.15,64.15,0,0,1,63.32-54.82,6.64,6.64,0,0,1,6.52,7.42l-.41,3.68a6.73,6.73,0,0,1-6.67,5.93A46.94,46.94,0,0,0,392.52,198.8Z",transform:"translate(-297.37 -69.26)",fill:a.primaryColor}),l.a.createElement("path",{d:"M577.93,822.91V88.25a19,19,0,0,1,19-19h11.26a19,19,0,0,1,19,19V822.91C627.17,833.35,577.93,833.35,577.93,822.91Z",transform:"translate(-297.37 -69.26)",fill:"#535461"}),l.a.createElement("rect",{x:"120.96",y:"148.23",width:"366.73",height:"304.56",rx:"44.36",ry:"44.36",fill:"url(#c07350d9-0c50-4d35-b63a-3c71f5ac29f1)"}),l.a.createElement("rect",{x:"125.44",y:"152.71",width:"358.31",height:"295.61",rx:"44.36",ry:"44.36",fill:"#fff"}),l.a.createElement("path",{d:"M618.47,344.61a4.76,4.76,0,0,1,4.75,4.75v40.83a4.76,4.76,0,0,1-4.75,4.75H581.53a4.76,4.76,0,0,1-4.75-4.75V349.36a4.76,4.76,0,0,1,4.75-4.75h36.95m0-2H581.53a6.75,6.75,0,0,0-6.75,6.75v40.83a6.75,6.75,0,0,0,6.75,6.75h36.95a6.75,6.75,0,0,0,6.75-6.75V349.36a6.75,6.75,0,0,0-6.75-6.75Z",transform:"translate(-297.37 -69.26)",fill:"#e0e0e0"}),l.a.createElement("line",{x1:"302.63",y1:"288.42",x2:"302.63",y2:"299.88",fill:"none",stroke:a.primaryColor,strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2"}),l.a.createElement("path",{d:"M604.8,362.7a10.19,10.19,0,1,1-9.42-.09",transform:"translate(-297.37 -69.26)",fill:"none",stroke:a.primaryColor,strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2"}))};s.propTypes={primaryColor:o.a.string,height:o.a.string,class:o.a.string},s.defaultProps={primaryColor:"#6c68fb",height:"100%",class:""},t.default=s}}]);
+(window["illustrationsJSONP"] = window["illustrationsJSONP"] || []).push([["illustrations/svg/Broadcast"],{
+
+/***/ "./src/illustrations/svg/Broadcast/index.js":
+/*!**************************************************!*\
+  !*** ./src/illustrations/svg/Broadcast/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var UndrawBroadcast = function UndrawBroadcast(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    preserveAspectRatio: "xMinYMin meet",
+    className: props.class,
+    id: "e9df7128-f90d-48f2-af2a-c80f8452c1a7",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    viewBox: "0 0 882.5 686.51"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("defs", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("linearGradient", {
+    id: "c07350d9-0c50-4d35-b63a-3c71f5ac29f1",
+    x1: "304.32",
+    y1: "452.8",
+    x2: "304.32",
+    y2: "148.23",
+    gradientUnits: "userSpaceOnUse"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("stop", {
+    offset: "0",
+    stopColor: "gray",
+    stopOpacity: "0.25"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("stop", {
+    offset: "0.54",
+    stopColor: "gray",
+    stopOpacity: "0.12"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("stop", {
+    offset: "1",
+    stopColor: "gray",
+    stopOpacity: "0.1"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M847.51,148.64a84.83,84.83,0,0,1,31.57,57.89,6.66,6.66,0,0,0,6.82,6l10.24-.3a6.68,6.68,0,0,0,6.46-7.31,108.65,108.65,0,0,0-113.2-98.3,6.69,6.69,0,0,0-6.34,7.42l1.14,10.18a6.65,6.65,0,0,0,6.85,5.92A84.79,84.79,0,0,1,847.51,148.64Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: props.primaryColor
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M839.34,158.88a84.78,84.78,0,0,0-55.4-18.56,6.67,6.67,0,0,0-6.42,7.42l.85,7.59a6.66,6.66,0,0,0,6.74,5.92,64.15,64.15,0,0,1,64.79,56.22,6.68,6.68,0,0,0,6.81,5.89l7.63-.22a6.66,6.66,0,0,0,6.45-7.37A84.82,84.82,0,0,0,839.34,158.88Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: props.primaryColor
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M807.48,198.8a47,47,0,0,1,17.15,29.52,6.73,6.73,0,0,0,6.81,5.77l3.69-.11a6.69,6.69,0,0,0,6.41-7.69,64.15,64.15,0,0,0-63.32-54.82,6.64,6.64,0,0,0-6.52,7.42l.41,3.68a6.73,6.73,0,0,0,6.67,5.93A46.94,46.94,0,0,1,807.48,198.8Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: props.primaryColor
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M352.49,148.64a84.83,84.83,0,0,0-31.57,57.89,6.66,6.66,0,0,1-6.82,6l-10.24-.3a6.68,6.68,0,0,1-6.46-7.31,108.65,108.65,0,0,1,113.2-98.3,6.69,6.69,0,0,1,6.34,7.42L415.8,124.2a6.65,6.65,0,0,1-6.85,5.92A84.79,84.79,0,0,0,352.49,148.64Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: props.primaryColor
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M360.66,158.88a84.78,84.78,0,0,1,55.4-18.56,6.67,6.67,0,0,1,6.42,7.42l-.85,7.59a6.66,6.66,0,0,1-6.74,5.92,64.15,64.15,0,0,0-64.79,56.22,6.68,6.68,0,0,1-6.81,5.89l-7.63-.22a6.66,6.66,0,0,1-6.45-7.37A84.82,84.82,0,0,1,360.66,158.88Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: props.primaryColor
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M392.52,198.8a47,47,0,0,0-17.15,29.52,6.73,6.73,0,0,1-6.81,5.77l-3.69-.11a6.69,6.69,0,0,1-6.41-7.69,64.15,64.15,0,0,1,63.32-54.82,6.64,6.64,0,0,1,6.52,7.42l-.41,3.68a6.73,6.73,0,0,1-6.67,5.93A46.94,46.94,0,0,0,392.52,198.8Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: props.primaryColor
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M577.93,822.91V88.25a19,19,0,0,1,19-19h11.26a19,19,0,0,1,19,19V822.91C627.17,833.35,577.93,833.35,577.93,822.91Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: "#535461"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("rect", {
+    x: "120.96",
+    y: "148.23",
+    width: "366.73",
+    height: "304.56",
+    rx: "44.36",
+    ry: "44.36",
+    fill: "url(#c07350d9-0c50-4d35-b63a-3c71f5ac29f1)"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("rect", {
+    x: "125.44",
+    y: "152.71",
+    width: "358.31",
+    height: "295.61",
+    rx: "44.36",
+    ry: "44.36",
+    fill: "#fff"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M618.47,344.61a4.76,4.76,0,0,1,4.75,4.75v40.83a4.76,4.76,0,0,1-4.75,4.75H581.53a4.76,4.76,0,0,1-4.75-4.75V349.36a4.76,4.76,0,0,1,4.75-4.75h36.95m0-2H581.53a6.75,6.75,0,0,0-6.75,6.75v40.83a6.75,6.75,0,0,0,6.75,6.75h36.95a6.75,6.75,0,0,0,6.75-6.75V349.36a6.75,6.75,0,0,0-6.75-6.75Z",
+    transform: "translate(-297.37 -69.26)",
+    fill: "#e0e0e0"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("line", {
+    x1: "302.63",
+    y1: "288.42",
+    x2: "302.63",
+    y2: "299.88",
+    fill: "none",
+    stroke: props.primaryColor,
+    strokeLinecap: "round",
+    strokeMiterlimit: "10",
+    strokeWidth: "2"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M604.8,362.7a10.19,10.19,0,1,1-9.42-.09",
+    transform: "translate(-297.37 -69.26)",
+    fill: "none",
+    stroke: props.primaryColor,
+    strokeLinecap: "round",
+    strokeMiterlimit: "10",
+    strokeWidth: "2"
+  }));
+};
+
+UndrawBroadcast.propTypes = {
+  /**
+  * Hex color
+  */
+  primaryColor: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+
+  /**
+  * percentage
+  */
+  height: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+
+  /**
+  * custom class for svg
+  */
+  class: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+UndrawBroadcast.defaultProps = {
+  primaryColor: '#6c68fb',
+  height: '100%',
+  class: ''
+};
+/* harmony default export */ __webpack_exports__["default"] = (UndrawBroadcast);
+
+/***/ })
+
+}]);
+//# sourceMappingURL=Broadcast.js.map

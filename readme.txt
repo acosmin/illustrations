@@ -2,9 +2,9 @@
 Contributors: acosmin 
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
-Requires at least: 5.2.0
-Tested up to: 5.3.3
-Stable tag: 1.0.1
+Requires at least: 5.3.2
+Tested up to: 5.3.4
+Stable tag: 1.0.2
 Requires PHP: 5.5
 Tags: illustrations, blocks, editor, svg, images
 
@@ -42,8 +42,14 @@ License: MIT
 
 == Changelog ==
 
+= 1.0.2 =
+Release Date: January 7th, 2019
+
+* Increased required wp version to 5.3.2;
+* Fixed issue with double `position:absolute` in markup;
+
 = 1.0.1 =
-Release Date: October 14th, 2019
+Release Date: January 7th, 2019
 
 * Increased required wp version to 5.2.0;
 * Updated dependencies;
