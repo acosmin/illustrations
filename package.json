@@ -32,7 +32,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli": "^3.3.12",
     "webpack-fix-style-only-entries": "0.0.5",
     "webpack-require-from": "^1.5.0"
   },
